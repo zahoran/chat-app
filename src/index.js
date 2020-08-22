@@ -15,7 +15,7 @@ io.on('connection', (socket) => {
 
     socket.on('inputChanged', (data) => {
         console.log(data)
-        socket.emit('inputChanged', data)
+        io.emit('inputChanged', data)
     })
 })
 
